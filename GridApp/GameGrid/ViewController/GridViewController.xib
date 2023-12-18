@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GridViewController" customModule="GameGrid" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="fI3-Wh-wS4" id="aKa-Ip-sA0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fI3-Wh-wS4">
+                    <rect key="frame" x="10" y="69" width="373" height="696"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XIN-hk-v6O">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3C-6e-xx2">
+                    <rect key="frame" x="80" y="783" width="233" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Regenerate"/>
+                    <connections>
+                        <action selector="generateButtonTapped:" destination="-1" eventType="touchUpInside" id="iOG-3h-r0m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x3C-6e-xx2" secondAttribute="trailing" constant="80" id="5Re-Kt-3zc"/>
+                <constraint firstItem="x3C-6e-xx2" firstAttribute="top" secondItem="fI3-Wh-wS4" secondAttribute="bottom" constant="18" id="P4W-Pz-6CH"/>
+                <constraint firstItem="x3C-6e-xx2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="VxH-en-WAz"/>
+                <constraint firstItem="fI3-Wh-wS4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="ekn-CT-YNn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fI3-Wh-wS4" secondAttribute="trailing" constant="10" id="j1O-Mh-NAG"/>
+                <constraint firstItem="x3C-6e-xx2" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="mDl-dW-Gy3"/>
+                <constraint firstItem="fI3-Wh-wS4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="qCq-El-G04"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
